@@ -10,13 +10,13 @@ function Carousel() {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://source.unsplash.com/random/1920x800/?engine" className="d-block w-100" alt="Slide 1" />
+          <img src="https://via.placeholder.com/1920x800" className="d-block w-100" alt="Slide 1" />
         </div>
         <div className="carousel-item">
-          <img src="https://source.unsplash.com/random/1920x800/?car" className="d-block w-100" alt="Slide 2" />
+          <img src="https://via.placeholder.com/1920x800" className="d-block w-100" alt="Slide 2" />
         </div>
         <div className="carousel-item">
-          <img src="https://source.unsplash.com/random/1920x800/?motorcycle" className="d-block w-100" alt="Slide 3" />
+          <img src="https://via.placeholder.com/1920x800" className="d-block w-100" alt="Slide 3" />
         </div>
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
