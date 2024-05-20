@@ -1,14 +1,15 @@
 import React from 'react';
+import './Footer.css'; // Make sure to import the CSS file
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-5">
+    <footer className="footer bg-dark text-white py-5">
       <div className="container">
         <div className="row">
           <div className="col-md-3">
             {/* Company Logo and Name */}
             <div className="d-flex flex-column align-items-center">
-              <img className='footer-logo' src="/logo.png" alt="Company Logo" width="100" height="100" />
+              <img className="footer-logo" src="/logo.png" alt="Company Logo" width="100" height="100" />
               <h5 className="mt-3 mb-4">NIYKADO</h5>
             </div>
           </div>
@@ -60,7 +61,7 @@ const Footer = () => {
         <div className="row">
           <div className="col">
             <hr className="bg-light" />
-            <p className="text-center footer mt-4">
+            <p className="text-center mt-4">
               &copy; 2024 NIYKADO. All rights reserved.
             </p>
           </div>

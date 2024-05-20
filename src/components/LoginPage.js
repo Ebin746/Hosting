@@ -4,7 +4,7 @@ import SignInForm from './SignInForm'; // Assuming SignInForm is in a separate f
 import './LoginPage.css'; // Import your CSS file for styling
 
 export default function LoginPage() {
-  const [isSignup, setIsSignup] = useState(true);
+  const [isSignup, setIsSignup] = useState(false);
 
   const toggleForm = () => {
     setIsSignup(prevState => !prevState);

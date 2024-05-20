@@ -38,7 +38,7 @@ const InformationSection = () => {
           <div className="card card-news-long h-100" style={{ width: '400px', height: '621px' }}>
             <img src="https://via.placeholder.com/400x621" className="card-img-top" alt="Long Rectangle Image" />
             <div className="card-body card-body-custom">
-            <Link to="/news"><a href="#" className="btn btntype-1">History</a></Link>
+            <Link to="/history"><a href="#" className="btn btntype-1">History</a></Link>
             </div>
           </div>
         </div>

@@ -1,3 +1,4 @@
+// NewsSection.js
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { Link } from 'react-router-dom';
@@ -51,7 +52,7 @@ const NewsText = styled.p`
   font-family: Arial, Helvetica, sans-serif;
 `;
 
-const ReadMoreLink = styled.a`
+const ReadMoreLink = styled(Link)`
   display: block;
   width: 100%;
   padding: 10px 0;
@@ -71,28 +72,28 @@ const ReadMoreLink = styled.a`
 
 const newsItems = [
   {
+    id: 1,
     imgSrc: "https://via.placeholder.com/200x167",
-    title: "lorem",
+    title: "Lorem Ipsum 1",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.",
-    link: "newssecond.html",
   },
   {
+    id: 2,
     imgSrc: "https://via.placeholder.com/200x167",
-    title: "lorem",
+    title: "Lorem Ipsum 2",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.",
-    link: "newssecond.html",
   },
   {
+    id: 3,
     imgSrc: "https://via.placeholder.com/200x167",
-    title: "lorem",
+    title: "Lorem Ipsum 3",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.",
-    link: "newssecond.html",
   },
   {
+    id: 4,
     imgSrc: "https://via.placeholder.com/200x167",
-    title: "lorem",
+    title: "Lorem Ipsum 4",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.",
-    link: "newssecond.html",
   },
 ];
 
@@ -104,7 +105,7 @@ export default function NewsSection() {
           <NewsImage src={item.imgSrc} alt={`img ${index + 1}`} />
           <NewsTitle>{item.title}</NewsTitle>
           <NewsText>{item.text}</NewsText>
-          <Link to="/news"><ReadMoreLink href={item.link} target="_main">Read More</ReadMoreLink></Link>
+          <ReadMoreLink to={`/news/${item.id}`}>Read More</ReadMoreLink>
         </NewsBlock>
       ))}
     </NewsContainer>

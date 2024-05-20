@@ -23,9 +23,6 @@ export default function News() {
           Suscipit consequatur vero voluptatum cupiditate nesciunt, in ex assumenda consectetur magnam cum. Incidunt officiis tempora exercitationem dolor, cupiditate iusto nihil, non itaque, unde quo quaerat possimus molestias harum voluptate debitis!
           Maxime pariatur voluptas expedita ipsam reprehenderit. Corrupti in tenetur eaque quidem beatae voluptas asperiores? Saepe sint iste, exercitationem eum dolorem, voluptates labore quibusdam accusamus numquam architecto porro voluptate dolore quidem   hello this is the end </p>
       </div>
-      <footer>
-        &copy; 2024 NIYKADO pvt ltd. All rights reserved.
-      </footer>
     </div>
   );
 }

@@ -1,0 +1,111 @@
+.history-body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.history-header {
+    background-color: #888888;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.history-h1 {
+    margin: 0;
+}
+
+.history-timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    list-style: none;
+}
+
+.history-timeline-item {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-out;
+}
+
+.history-timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.history-timeline-item .history-timeline-img {
+    flex: 1;
+    text-align: center;
+}
+
+.history-timeline-item .history-timeline-img img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.history-timeline-item .history-timeline-content {
+    flex: 2;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.history-timeline-item h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.history-timeline-item p {
+    margin: 10px 0 0;
+}
+
+/* Animation */
+@keyframes history-fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.history-timeline-item {
+    animation: history-fadeInUp 0.5s forwards;
+    animation-delay: calc(var(--history-item-index) * 0.3s);
+}
+
+.history-timeline-item {
+    --history-item-index: 0;
+}
+
+.history-timeline-item:nth-child(2) {
+    --history-item-index: 1;
+}
+
+.history-timeline-item:nth-child(3) {
+    --history-item-index: 2;
+}
+
+.history-timeline-item:nth-child(4) {
+    --history-item-index: 3;
+}
+
+/* Hover Effects */
+.history-timeline-item:hover .history-timeline-img img {
+    transform: scale(1.1);
+}
+
+.history-timeline-item:hover .history-timeline-content {
+    transform: translateY(-10px);
+}
